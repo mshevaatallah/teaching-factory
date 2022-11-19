@@ -34,63 +34,67 @@
     <title>Web Pameran</title>
   </head>
   <body id="home">
+
     <header>
       <!-- Navbar -->
-      <section
-        class="navigation"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
-      >
-        <div class="container">
-          <div class="box-navigation">
-            <div class="box">
-              <h1>
-                <img src="artify remove.png" alt="" width="190px" />
-              </h1>
-            </div>
-            <div class="box menu-navigation">
-              <ul>
-                <li>
-                  <i class="ri-home-4-line"></i>
-                  <a href="#home">Home</a>
-                </li>
-                <li>
-                  <i class="ri-projector-line"></i>
-                  <a href="#gallery">Pameran</a>
-                </li>
-                <li>
-                  <i class="ri-bar-chart-grouped-line"></i>
-                  <a href="#famous">Famous</a>
-                </li>
-                <li>
-                  <i class="ri-information-line"></i>
-                  <a href="#about">About</a>
-                </li>
-                <li>
-                  <i class="ri-contacts-line"></i>
-                  <a href="#contact">Contact </a>
-                </li>
-              </ul>
-            </div>
-            <div class="box menu-bar">
-              <i class="ri-menu-5-fill" style="color: white"></i>
+      <div id="particles-js">
+        <section
+          class="navigation"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="container">
+            <div class="box-navigation">
+              <div class="box">
+                <h1>
+                  <img src="./img/logo.svg" alt="" width="80px" />
+                </h1>
+              </div>
+              <div class="box menu-navigation">
+                <ul>
+                  <li>
+                    <i class="ri-home-4-line"></i>
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <i class="ri-projector-line"></i>
+                    <a href="#gallery">Pameran</a>
+                  </li>
+                  <li>
+                    <i class="ri-bar-chart-grouped-line"></i>
+                    <a href="#famous">Famous</a>
+                  </li>
+                  <li>
+                    <i class="ri-information-line"></i>
+                    <a href="#about">About</a>
+                  </li>
+                  <li>
+                    <i class="ri-contacts-line"></i>
+                    <a href="#contact">Contact </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="box menu-bar">
+                <i class="ri-menu-5-fill" style="color: white"></i>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Navbar -->
+        </section>
+        <!-- End Navbar -->
 
-      <!-- Hero -->
-      <section class="hero">
-        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-          Pameran Online
-        </h1>
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-          Karya Nusantara
-        </h2>
-      </section>
-      <!-- End Hero -->
+        <!-- Hero -->
+        <section class="hero">
+          <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+           Teaching Factory
+          </h1>
+          <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+           SMK 1 PERGURUAN CIKINI
+          </h2>
+        </section>
+        <!-- End Hero -->
+     
     </header>
 
     <!-- About -->
@@ -100,11 +104,7 @@
           <div class="box">
             <h1 data-aos="zoom-out-down">Pameran Virtual/Online</h1>
             <p data-aos="zoom-out-down">
-              Kegitan pameran online ini mengusung tema lukisan. Dimana ini
-              merupakan kegiatan sekolah SMK Peguruan Cikini 1 jurusan Rekayasa
-              Perangkat Lunak atau di singkat RPL yang isi dari website pameran
-              online ini adahlah karya seni lukis nusantara yang akan di
-              tampilkan di dalam website ini.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio consectetur assumenda voluptate distinctio facere quia vero! Adipisci suscipit quod iusto. Voluptatem nostrum quaerat tenetur voluptatum vero tempora deleniti cupiditate? Eum odio, quo placeat esse aperiam doloremque numquam pariatur adipisci culpa.
             </p>
           </div>
           <div class="box">
@@ -593,6 +593,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="particles.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
     </script>
   </body>
 </html>
