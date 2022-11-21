@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.3/keen-slider.min.css"
+  />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap"
       rel="stylesheet"
     />
@@ -113,49 +117,13 @@ Teaching Factory adalah sebuah pameran hasil karya dari masing masing jurusan di
     <section class="famous" id="famous">
       <div class="container">
         <div class="box-famous">
-          <div class="box">
-            <img src="Lukisan Famous 1.jpg" alt="" data-aos="zoom-in" />
-            <h1
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-            >
-              The Arrest Of Pangeran Diponegoro
-            </h1>
-            <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              Lukisan Raden Saleh adalah luikisan legenda, lukisan ini merupakan
-              lukisan pertama yang dibuat Raden Saleh Syarif Bustman tahun(1857)
-            </p>
-          </div>
-          <div class="box">
-            <img src="Lukisan Famous 2.jpg" alt="" data-aos="zoom-in-down " />
-            <h1
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-            >
-              Potret Diri
-            </h1>
-            <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              Potret diri adalah lukisan yang menjadikan ekspresi seniman
-              sebagai objek utamanya yaitu Potret Diri (Hariadi Selobinangun -
-              1892)
-            </p>
-          </div>
-          <div class="box">
-            <img src="Lukisan Famous 3.jpg" alt="" data-aos="zoom-in" />
-            <h1
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-            >
-              Anjing laut
-            </h1>
-            <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              Lukisan "anjing laut" dipersembahkan untuk Ratu Elizabeth II. Ratu
-              Inggris untuk perayaan Diamong jubile tahun 2012 Dibuat oleh
-              sumarniu puji les
-            </p>
+          <div id="my-keen-slider" class="keen-slider">
+            <div class="keen-slider__slide number-slide1"><img src="./gallery 15.jpg" alt=""></div>
+            <div class="keen-slider__slide number-slide2"><img src="./gallery 19.jpeg" alt=""></div>
+            <div class="keen-slider__slide number-slide3"><img src="./gallery 20.jpg" alt=""></div>
+            <div class="keen-slider__slide number-slide4"><img src="./gallery 15.jpg" alt=""></div>
+            <div class="keen-slider__slide number-slide5"><img src="./gallery 8.jpg" alt=""></div>
+            <div class="keen-slider__slide number-slide6"><img src="./gallery 16.jpg" alt=""></div>
           </div>
         </div>
       </div>
@@ -592,6 +560,15 @@ Teaching Factory adalah sebuah pameran hasil karya dari masing masing jurusan di
     <script>
       particlesJS.load("particles-js", "particles.json", function () {
         console.log("callback - particles.js config loaded");
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.3/keen-slider.min.js"></script>
+    <script>
+      var slider = new KeenSlider("#my-keen-slider", {
+        slides: {
+          perView: 2,
+          spacing: 15,
+        },
       });
     </script>
   </body>
