@@ -518,7 +518,7 @@ header .hero h2 {
 
 .about .box-about .box:nth-child(1) {
   padding: 30px;
-  width: 600px;
+  width: 90%;
 }
 
 .about .box-about .box:nth-child(1) h1 {
